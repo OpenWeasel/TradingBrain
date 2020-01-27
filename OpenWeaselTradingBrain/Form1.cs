@@ -26,6 +26,9 @@ namespace OpenWeaselTradingBrain
     {
 
         private int _ticks;
+        public int MouseDownX;
+        public int MouseDownY;
+        public Boolean BeingDragged = false;
 
         public Main()
         {
@@ -614,6 +617,35 @@ namespace OpenWeaselTradingBrain
         private void btExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void menuStrip1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                BeingDragged = true;
+                MouseDownX = e.X;
+                MouseDownY = e.Y;
+            }
+        }
+
+        private void menuStrip1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (BeingDragged == true)
+            {
+                var tmp = new System.Drawing.Point();
+                tmp.X = this.Location.X + (e.X - MouseDownX);
+                tmp.Y = this.Location.Y + (e.Y - MouseDownY);
+                this.Location = tmp;
+            }
+        }
+
+        private void menuStrip1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                BeingDragged = false;
+            }
         }
     }
 }
