@@ -605,5 +605,15 @@ namespace OpenWeaselTradingBrain
         {
            
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
