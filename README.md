@@ -6,5 +6,7 @@ Simply by shifting the known value of percent change a day back a prediction mod
 # R Packages & Dependencies
 Install these R Packages & Dependecies
 gtable, scales, lazyeval, plyr, rlang, tibble, withr, stringr, lubridate, PerformanceAnalystics, tidyquant
+# Development Recommendations
+Its highly suggested that you also install RSTUDIO along side TradingBrain. This software is still in beta as is. Use it at your own risk.
 # Support and Development
 OpenWeasel.com has more development notes and details for anyone interested.
