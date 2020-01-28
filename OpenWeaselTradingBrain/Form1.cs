@@ -647,5 +647,93 @@ namespace OpenWeaselTradingBrain
                 BeingDragged = false;
             }
         }
+
+
+        private void tbSymbol_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+                using (StreamWriter writer = new StreamWriter("symbol.txt", false))
+                {
+                    writer.Write(tbSymbol.Text);
+                }
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void tbVolume_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+                using (StreamWriter writer = new StreamWriter("volume.txt", false))
+                {
+                    writer.Write(tbVolume.Text);
+                }
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void tbCurrentPrice_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+                using (StreamWriter writer = new StreamWriter("currentPrice.txt", false))
+                {
+                    writer.Write(tbCurrentPrice.Text);
+                }
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void tbOpen_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+                using (StreamWriter writer = new StreamWriter("openPrice.txt", false))
+                {
+                    writer.Write(tbOpen.Text);
+                }
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void tbHigh_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+                using (StreamWriter writer = new StreamWriter("highPrice.txt", false))
+                {
+                    writer.Write(tbHigh.Text);
+                }
+                SendKeys.Send("{TAB}");
+            }
+
+        }
+
+        private void tbLow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+                using (StreamWriter writer = new StreamWriter("lowPrice.txt", false))
+                {
+                    writer.Write(tbLow.Text);
+                }
+                SendKeys.Send("{TAB}");
+            }
+        }
     }
+ 
 }
+

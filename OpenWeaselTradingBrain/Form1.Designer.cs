@@ -63,7 +63,6 @@
             this.eTHUSDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblMeanPTValue = new System.Windows.Forms.Label();
@@ -92,13 +91,8 @@
             this.lblLossRiskValue = new System.Windows.Forms.Label();
             this.lblWinRewardValue = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.btUpdatePrice = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tbVolume = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btUpdateOpen = new System.Windows.Forms.Label();
-            this.btUpdateHigh = new System.Windows.Forms.Label();
-            this.btUpdateLow = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btReleaseGraph = new System.Windows.Forms.Label();
             this.btRunCalculation = new System.Windows.Forms.Label();
@@ -111,7 +105,6 @@
             this.btLiveData = new System.Windows.Forms.Label();
             this.tbSymbol = new System.Windows.Forms.TextBox();
             this.lblSymbol = new System.Windows.Forms.Label();
-            this.btUpdateSymbol = new System.Windows.Forms.Label();
             this.lblSymbolTitle = new System.Windows.Forms.Label();
             this.btImportData = new System.Windows.Forms.Label();
             this.openFileDialogData = new System.Windows.Forms.OpenFileDialog();
@@ -120,16 +113,18 @@
             this.btExit = new System.Windows.Forms.Label();
             this.pbMenuBackground = new System.Windows.Forms.PictureBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.pbFooter = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.predictionGraph)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFooter)).BeginInit();
             this.SuspendLayout();
             // 
             // predictionGraph
             // 
             this.predictionGraph.BackColor = System.Drawing.Color.Transparent;
-            this.predictionGraph.Location = new System.Drawing.Point(3, 98);
+            this.predictionGraph.Location = new System.Drawing.Point(13, 97);
             this.predictionGraph.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.predictionGraph.Name = "predictionGraph";
             this.predictionGraph.Size = new System.Drawing.Size(819, 748);
@@ -196,7 +191,7 @@
             this.btReset.AutoSize = true;
             this.btReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btReset.ForeColor = System.Drawing.Color.White;
-            this.btReset.Location = new System.Drawing.Point(1198, 825);
+            this.btReset.Location = new System.Drawing.Point(1125, 727);
             this.btReset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(58, 20);
@@ -209,7 +204,7 @@
             this.lblSimulate.AutoSize = true;
             this.lblSimulate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSimulate.ForeColor = System.Drawing.Color.White;
-            this.lblSimulate.Location = new System.Drawing.Point(1045, 825);
+            this.lblSimulate.Location = new System.Drawing.Point(843, 727);
             this.lblSimulate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSimulate.Name = "lblSimulate";
             this.lblSimulate.Size = new System.Drawing.Size(144, 20);
@@ -250,6 +245,7 @@
             this.tbCurrentPrice.Name = "tbCurrentPrice";
             this.tbCurrentPrice.Size = new System.Drawing.Size(94, 26);
             this.tbCurrentPrice.TabIndex = 3;
+            this.tbCurrentPrice.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbCurrentPrice_KeyDown);
             // 
             // tbOpen
             // 
@@ -260,6 +256,7 @@
             this.tbOpen.Name = "tbOpen";
             this.tbOpen.Size = new System.Drawing.Size(94, 26);
             this.tbOpen.TabIndex = 4;
+            this.tbOpen.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbOpen_KeyDown);
             // 
             // tbHigh
             // 
@@ -270,6 +267,7 @@
             this.tbHigh.Name = "tbHigh";
             this.tbHigh.Size = new System.Drawing.Size(94, 26);
             this.tbHigh.TabIndex = 5;
+            this.tbHigh.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbHigh_KeyDown);
             // 
             // tbLow
             // 
@@ -280,6 +278,7 @@
             this.tbLow.Name = "tbLow";
             this.tbLow.Size = new System.Drawing.Size(94, 26);
             this.tbLow.TabIndex = 6;
+            this.tbLow.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbLow_KeyDown);
             // 
             // lblPrice
             // 
@@ -339,12 +338,11 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.viewToolStripMenuItem});
+            this.editToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(40, 5);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(188, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(123, 33);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
@@ -359,7 +357,7 @@
             this.importCryptoCurrencyDataToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 32);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // importDataToolStripMenuItem
@@ -444,20 +442,14 @@
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.testToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(58, 32);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // testToolStripMenuItem
             // 
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(144, 34);
             this.testToolStripMenuItem.Text = "Test";
-            // 
-            // viewToolStripMenuItem
-            // 
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
-            this.viewToolStripMenuItem.Text = "View";
             // 
             // label1
             // 
@@ -614,12 +606,14 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
+            this.lblStatus.BackColor = System.Drawing.Color.Firebrick;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.White;
-            this.lblStatus.Location = new System.Drawing.Point(831, 825);
+            this.lblStatus.Location = new System.Drawing.Point(9, 868);
             this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(118, 20);
+            this.lblStatus.Padding = new System.Windows.Forms.Padding(10);
+            this.lblStatus.Size = new System.Drawing.Size(138, 40);
             this.lblStatus.TabIndex = 4;
             this.lblStatus.Text = "Simulation Idle";
             // 
@@ -763,19 +757,6 @@
             this.timer2.Interval = 10000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // btUpdatePrice
-            // 
-            this.btUpdatePrice.AutoSize = true;
-            this.btUpdatePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btUpdatePrice.ForeColor = System.Drawing.Color.White;
-            this.btUpdatePrice.Location = new System.Drawing.Point(1089, 582);
-            this.btUpdatePrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btUpdatePrice.Name = "btUpdatePrice";
-            this.btUpdatePrice.Size = new System.Drawing.Size(68, 20);
-            this.btUpdatePrice.TabIndex = 5;
-            this.btUpdatePrice.Text = "Update";
-            this.btUpdatePrice.Click += new System.EventHandler(this.btUpdatePrice_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -797,58 +778,7 @@
             this.tbVolume.Name = "tbVolume";
             this.tbVolume.Size = new System.Drawing.Size(91, 26);
             this.tbVolume.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(971, 582);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Update";
-            this.label4.Click += new System.EventHandler(this.btUpdateVolume_Click);
-            // 
-            // btUpdateOpen
-            // 
-            this.btUpdateOpen.AutoSize = true;
-            this.btUpdateOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btUpdateOpen.ForeColor = System.Drawing.Color.White;
-            this.btUpdateOpen.Location = new System.Drawing.Point(843, 718);
-            this.btUpdateOpen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btUpdateOpen.Name = "btUpdateOpen";
-            this.btUpdateOpen.Size = new System.Drawing.Size(68, 20);
-            this.btUpdateOpen.TabIndex = 5;
-            this.btUpdateOpen.Text = "Update";
-            this.btUpdateOpen.Click += new System.EventHandler(this.btUpdateOpen_Click);
-            // 
-            // btUpdateHigh
-            // 
-            this.btUpdateHigh.AutoSize = true;
-            this.btUpdateHigh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btUpdateHigh.ForeColor = System.Drawing.Color.White;
-            this.btUpdateHigh.Location = new System.Drawing.Point(971, 718);
-            this.btUpdateHigh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btUpdateHigh.Name = "btUpdateHigh";
-            this.btUpdateHigh.Size = new System.Drawing.Size(68, 20);
-            this.btUpdateHigh.TabIndex = 5;
-            this.btUpdateHigh.Text = "Update";
-            this.btUpdateHigh.Click += new System.EventHandler(this.btUpdateHigh_Click);
-            // 
-            // btUpdateLow
-            // 
-            this.btUpdateLow.AutoSize = true;
-            this.btUpdateLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btUpdateLow.ForeColor = System.Drawing.Color.White;
-            this.btUpdateLow.Location = new System.Drawing.Point(1089, 718);
-            this.btUpdateLow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btUpdateLow.Name = "btUpdateLow";
-            this.btUpdateLow.Size = new System.Drawing.Size(68, 20);
-            this.btUpdateLow.TabIndex = 5;
-            this.btUpdateLow.Text = "Update";
-            this.btUpdateLow.Click += new System.EventHandler(this.btUpdateLow_Click);
+            this.tbVolume.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbVolume_KeyDown);
             // 
             // label6
             // 
@@ -943,6 +873,7 @@
             this.tbSymbol.Name = "tbSymbol";
             this.tbSymbol.Size = new System.Drawing.Size(95, 26);
             this.tbSymbol.TabIndex = 1;
+            this.tbSymbol.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSymbol_KeyDown);
             // 
             // lblSymbol
             // 
@@ -955,19 +886,6 @@
             this.lblSymbol.Size = new System.Drawing.Size(70, 20);
             this.lblSymbol.TabIndex = 1;
             this.lblSymbol.Text = "Symbol";
-            // 
-            // btUpdateSymbol
-            // 
-            this.btUpdateSymbol.AutoSize = true;
-            this.btUpdateSymbol.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btUpdateSymbol.ForeColor = System.Drawing.Color.White;
-            this.btUpdateSymbol.Location = new System.Drawing.Point(843, 582);
-            this.btUpdateSymbol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btUpdateSymbol.Name = "btUpdateSymbol";
-            this.btUpdateSymbol.Size = new System.Drawing.Size(68, 20);
-            this.btUpdateSymbol.TabIndex = 5;
-            this.btUpdateSymbol.Text = "Update";
-            this.btUpdateSymbol.Click += new System.EventHandler(this.btUpdateSymbol_Click);
             // 
             // lblSymbolTitle
             // 
@@ -1001,24 +919,28 @@
             // lblTimeValue
             // 
             this.lblTimeValue.AutoSize = true;
+            this.lblTimeValue.BackColor = System.Drawing.Color.Firebrick;
             this.lblTimeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeValue.ForeColor = System.Drawing.Color.White;
-            this.lblTimeValue.Location = new System.Drawing.Point(858, 760);
+            this.lblTimeValue.Location = new System.Drawing.Point(574, 868);
             this.lblTimeValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTimeValue.Name = "lblTimeValue";
-            this.lblTimeValue.Size = new System.Drawing.Size(37, 20);
+            this.lblTimeValue.Padding = new System.Windows.Forms.Padding(10);
+            this.lblTimeValue.Size = new System.Drawing.Size(57, 40);
             this.lblTimeValue.TabIndex = 4;
             this.lblTimeValue.Text = "N/A";
             // 
             // lblTimeZoneValue
             // 
             this.lblTimeZoneValue.AutoSize = true;
+            this.lblTimeZoneValue.BackColor = System.Drawing.Color.Firebrick;
             this.lblTimeZoneValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeZoneValue.ForeColor = System.Drawing.Color.White;
-            this.lblTimeZoneValue.Location = new System.Drawing.Point(858, 780);
+            this.lblTimeZoneValue.Location = new System.Drawing.Point(933, 866);
             this.lblTimeZoneValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTimeZoneValue.Name = "lblTimeZoneValue";
-            this.lblTimeZoneValue.Size = new System.Drawing.Size(37, 20);
+            this.lblTimeZoneValue.Padding = new System.Windows.Forms.Padding(10);
+            this.lblTimeZoneValue.Size = new System.Drawing.Size(57, 40);
             this.lblTimeZoneValue.TabIndex = 4;
             this.lblTimeZoneValue.Text = "N/A";
             // 
@@ -1061,13 +983,23 @@
             this.pbLogo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
             this.pbLogo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseUp);
             // 
+            // pbFooter
+            // 
+            this.pbFooter.BackColor = System.Drawing.Color.Firebrick;
+            this.pbFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pbFooter.Location = new System.Drawing.Point(0, 853);
+            this.pbFooter.Name = "pbFooter";
+            this.pbFooter.Size = new System.Drawing.Size(1277, 42);
+            this.pbFooter.TabIndex = 16;
+            this.pbFooter.TabStop = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.ClientSize = new System.Drawing.Size(1277, 988);
+            this.ClientSize = new System.Drawing.Size(1277, 895);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.lblSymbolTitle);
@@ -1081,12 +1013,6 @@
             this.Controls.Add(this.tbOpen);
             this.Controls.Add(this.tbVolume);
             this.Controls.Add(this.tbCurrentPrice);
-            this.Controls.Add(this.btUpdateLow);
-            this.Controls.Add(this.btUpdateHigh);
-            this.Controls.Add(this.btUpdateOpen);
-            this.Controls.Add(this.btUpdateSymbol);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.btUpdatePrice);
             this.Controls.Add(this.lblSimulate);
             this.Controls.Add(this.btReset);
             this.Controls.Add(this.lblIndicator);
@@ -1130,6 +1056,7 @@
             this.Controls.Add(this.predictionGraph);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pbMenuBackground);
+            this.Controls.Add(this.pbFooter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -1143,6 +1070,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFooter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1171,7 +1099,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblMeanPTValue;
@@ -1211,13 +1138,8 @@
         private System.Windows.Forms.Label lblLossRiskValue;
         private System.Windows.Forms.Label lblWinRewardValue;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Label btUpdatePrice;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbVolume;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label btUpdateOpen;
-        private System.Windows.Forms.Label btUpdateHigh;
-        private System.Windows.Forms.Label btUpdateLow;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label btReleaseGraph;
         private System.Windows.Forms.Label btRunCalculation;
@@ -1230,7 +1152,6 @@
         private System.Windows.Forms.Label btLiveData;
         private System.Windows.Forms.TextBox tbSymbol;
         private System.Windows.Forms.Label lblSymbol;
-        private System.Windows.Forms.Label btUpdateSymbol;
         private System.Windows.Forms.Label lblSymbolTitle;
         private System.Windows.Forms.Label btImportData;
         private System.Windows.Forms.OpenFileDialog openFileDialogData;
@@ -1240,6 +1161,7 @@
         private System.Windows.Forms.Label btExit;
         private System.Windows.Forms.PictureBox pbMenuBackground;
         private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.PictureBox pbFooter;
     }
 }
 
