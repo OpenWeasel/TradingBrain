@@ -118,8 +118,10 @@
             this.lblTimeValue = new System.Windows.Forms.Label();
             this.lblTimeZoneValue = new System.Windows.Forms.Label();
             this.btExit = new System.Windows.Forms.Label();
+            this.pbMenuBackground = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.predictionGraph)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuBackground)).BeginInit();
             this.SuspendLayout();
             // 
             // predictionGraph
@@ -329,6 +331,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.ForeColor = System.Drawing.Color.White;
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -336,10 +339,10 @@
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.viewToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(40, 5);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1277, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(188, 33);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
@@ -445,7 +448,7 @@
             // testToolStripMenuItem
             // 
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(144, 34);
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.testToolStripMenuItem.Text = "Test";
             // 
             // viewToolStripMenuItem
@@ -931,6 +934,7 @@
             // tbSymbol
             // 
             this.tbSymbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tbSymbol.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbSymbol.ForeColor = System.Drawing.Color.White;
             this.tbSymbol.Location = new System.Drawing.Point(847, 545);
             this.tbSymbol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1019,15 +1023,28 @@
             // btExit
             // 
             this.btExit.AutoSize = true;
-            this.btExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.btExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btExit.ForeColor = System.Drawing.Color.White;
-            this.btExit.Location = new System.Drawing.Point(1241, 0);
+            this.btExit.Location = new System.Drawing.Point(1241, 7);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(24, 29);
             this.btExit.TabIndex = 13;
             this.btExit.Text = "x";
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
+            // 
+            // pbMenuBackground
+            // 
+            this.pbMenuBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pbMenuBackground.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbMenuBackground.Location = new System.Drawing.Point(0, 0);
+            this.pbMenuBackground.Name = "pbMenuBackground";
+            this.pbMenuBackground.Size = new System.Drawing.Size(1277, 44);
+            this.pbMenuBackground.TabIndex = 14;
+            this.pbMenuBackground.TabStop = false;
+            this.pbMenuBackground.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
+            this.pbMenuBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
+            this.pbMenuBackground.MouseUp += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseUp);
             // 
             // Main
             // 
@@ -1096,6 +1113,7 @@
             this.Controls.Add(this.lblMean);
             this.Controls.Add(this.predictionGraph);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pbMenuBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -1107,6 +1125,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.predictionGraph)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1202,6 +1221,7 @@
         private System.Windows.Forms.Label lblTimeZoneValue;
         private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
         private System.Windows.Forms.Label btExit;
+        private System.Windows.Forms.PictureBox pbMenuBackground;
     }
 }
 
