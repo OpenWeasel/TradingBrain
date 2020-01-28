@@ -119,11 +119,11 @@
             this.lblTimeZoneValue = new System.Windows.Forms.Label();
             this.btExit = new System.Windows.Forms.Label();
             this.pbMenuBackground = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.predictionGraph)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // predictionGraph
@@ -1048,18 +1048,18 @@
             this.pbMenuBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
             this.pbMenuBackground.MouseUp += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseUp);
             // 
-            // pictureBox1
+            // pbLogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 44);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
-            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseUp);
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(50, 44);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogo.TabIndex = 15;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
+            this.pbLogo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
+            this.pbLogo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseUp);
             // 
             // Main
             // 
@@ -1068,7 +1068,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.ClientSize = new System.Drawing.Size(1277, 988);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.lblSymbolTitle);
             this.Controls.Add(this.tbSymbol);
@@ -1142,7 +1142,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1239,7 +1239,7 @@
         private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
         private System.Windows.Forms.Label btExit;
         private System.Windows.Forms.PictureBox pbMenuBackground;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbLogo;
     }
 }
 
