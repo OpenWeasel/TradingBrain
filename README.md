@@ -10,3 +10,7 @@ gtable, scales, lazyeval, plyr, rlang, tibble, withr, stringr, lubridate, Perfor
 Its highly suggested that you also install RSTUDIO along side TradingBrain. This software is still in beta as is. Use it at your own risk.
 # Support and Development
 OpenWeasel.com has more development notes and details for anyone interested.
+
+
+Program written by James Houston
+jameshouston.us
