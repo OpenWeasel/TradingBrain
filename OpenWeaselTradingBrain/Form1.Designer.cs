@@ -118,6 +118,7 @@
             this.pbCalculationField = new System.Windows.Forms.PictureBox();
             this.pbBodyBG = new System.Windows.Forms.PictureBox();
             this.btStartButton = new System.Windows.Forms.PictureBox();
+            this.lbMaximize = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.predictionGraph)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuBackground)).BeginInit();
@@ -146,7 +147,7 @@
             this.lblMean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblMean.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMean.ForeColor = System.Drawing.Color.White;
-            this.lblMean.Location = new System.Drawing.Point(843, 125);
+            this.lblMean.Location = new System.Drawing.Point(843, 158);
             this.lblMean.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMean.Name = "lblMean";
             this.lblMean.Size = new System.Drawing.Size(76, 20);
@@ -159,7 +160,7 @@
             this.lblMeanValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblMeanValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMeanValue.ForeColor = System.Drawing.Color.White;
-            this.lblMeanValue.Location = new System.Drawing.Point(849, 162);
+            this.lblMeanValue.Location = new System.Drawing.Point(849, 195);
             this.lblMeanValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMeanValue.Name = "lblMeanValue";
             this.lblMeanValue.Size = new System.Drawing.Size(37, 20);
@@ -173,7 +174,7 @@
             this.lblStandardDeviation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStandardDeviation.ForeColor = System.Drawing.Color.White;
-            this.lblStandardDeviation.Location = new System.Drawing.Point(971, 125);
+            this.lblStandardDeviation.Location = new System.Drawing.Point(971, 158);
             this.lblStandardDeviation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStandardDeviation.Name = "lblStandardDeviation";
             this.lblStandardDeviation.Size = new System.Drawing.Size(57, 20);
@@ -187,7 +188,7 @@
             this.lblSDValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSDValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDValue.ForeColor = System.Drawing.Color.White;
-            this.lblSDValue.Location = new System.Drawing.Point(980, 162);
+            this.lblSDValue.Location = new System.Drawing.Point(980, 195);
             this.lblSDValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSDValue.Name = "lblSDValue";
             this.lblSDValue.Size = new System.Drawing.Size(37, 20);
@@ -205,7 +206,7 @@
             this.btReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btReset.ForeColor = System.Drawing.Color.Coral;
-            this.btReset.Location = new System.Drawing.Point(1125, 712);
+            this.btReset.Location = new System.Drawing.Point(1125, 745);
             this.btReset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(58, 20);
@@ -219,7 +220,7 @@
             this.lblSimulate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSimulate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSimulate.ForeColor = System.Drawing.Color.Coral;
-            this.lblSimulate.Location = new System.Drawing.Point(873, 712);
+            this.lblSimulate.Location = new System.Drawing.Point(873, 745);
             this.lblSimulate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSimulate.Name = "lblSimulate";
             this.lblSimulate.Size = new System.Drawing.Size(144, 20);
@@ -233,7 +234,7 @@
             this.lblIndicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndicator.ForeColor = System.Drawing.Color.White;
-            this.lblIndicator.Location = new System.Drawing.Point(1089, 125);
+            this.lblIndicator.Location = new System.Drawing.Point(1089, 158);
             this.lblIndicator.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIndicator.Name = "lblIndicator";
             this.lblIndicator.Size = new System.Drawing.Size(82, 20);
@@ -246,7 +247,7 @@
             this.lblIndicatorValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblIndicatorValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndicatorValue.ForeColor = System.Drawing.Color.White;
-            this.lblIndicatorValue.Location = new System.Drawing.Point(1108, 162);
+            this.lblIndicatorValue.Location = new System.Drawing.Point(1108, 195);
             this.lblIndicatorValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIndicatorValue.Name = "lblIndicatorValue";
             this.lblIndicatorValue.Size = new System.Drawing.Size(37, 20);
@@ -257,7 +258,7 @@
             // 
             this.tbCurrentPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.tbCurrentPrice.ForeColor = System.Drawing.Color.White;
-            this.tbCurrentPrice.Location = new System.Drawing.Point(1089, 568);
+            this.tbCurrentPrice.Location = new System.Drawing.Point(1089, 601);
             this.tbCurrentPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbCurrentPrice.Name = "tbCurrentPrice";
             this.tbCurrentPrice.Size = new System.Drawing.Size(94, 26);
@@ -268,7 +269,7 @@
             // 
             this.tbOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.tbOpen.ForeColor = System.Drawing.Color.White;
-            this.tbOpen.Location = new System.Drawing.Point(847, 668);
+            this.tbOpen.Location = new System.Drawing.Point(847, 701);
             this.tbOpen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbOpen.Name = "tbOpen";
             this.tbOpen.Size = new System.Drawing.Size(94, 26);
@@ -279,7 +280,7 @@
             // 
             this.tbHigh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.tbHigh.ForeColor = System.Drawing.Color.White;
-            this.tbHigh.Location = new System.Drawing.Point(973, 668);
+            this.tbHigh.Location = new System.Drawing.Point(973, 701);
             this.tbHigh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbHigh.Name = "tbHigh";
             this.tbHigh.Size = new System.Drawing.Size(94, 26);
@@ -290,7 +291,7 @@
             // 
             this.tbLow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.tbLow.ForeColor = System.Drawing.Color.White;
-            this.tbLow.Location = new System.Drawing.Point(1089, 668);
+            this.tbLow.Location = new System.Drawing.Point(1089, 701);
             this.tbLow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbLow.Name = "tbLow";
             this.tbLow.Size = new System.Drawing.Size(94, 26);
@@ -303,7 +304,7 @@
             this.lblPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Location = new System.Drawing.Point(1089, 542);
+            this.lblPrice.Location = new System.Drawing.Point(1089, 575);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(53, 20);
@@ -316,7 +317,7 @@
             this.lblOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOpen.ForeColor = System.Drawing.Color.White;
-            this.lblOpen.Location = new System.Drawing.Point(843, 642);
+            this.lblOpen.Location = new System.Drawing.Point(843, 675);
             this.lblOpen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOpen.Name = "lblOpen";
             this.lblOpen.Size = new System.Drawing.Size(53, 20);
@@ -329,7 +330,7 @@
             this.lblHigh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblHigh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHigh.ForeColor = System.Drawing.Color.White;
-            this.lblHigh.Location = new System.Drawing.Point(971, 642);
+            this.lblHigh.Location = new System.Drawing.Point(971, 675);
             this.lblHigh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHigh.Name = "lblHigh";
             this.lblHigh.Size = new System.Drawing.Size(48, 20);
@@ -342,7 +343,7 @@
             this.lblLow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLow.ForeColor = System.Drawing.Color.White;
-            this.lblLow.Location = new System.Drawing.Point(1089, 642);
+            this.lblLow.Location = new System.Drawing.Point(1089, 675);
             this.lblLow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLow.Name = "lblLow";
             this.lblLow.Size = new System.Drawing.Size(43, 20);
@@ -478,7 +479,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(843, 213);
+            this.label1.Location = new System.Drawing.Point(843, 246);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 20);
@@ -491,7 +492,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(971, 213);
+            this.label2.Location = new System.Drawing.Point(971, 246);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 20);
@@ -504,7 +505,7 @@
             this.lblMeanPTValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblMeanPTValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMeanPTValue.ForeColor = System.Drawing.Color.White;
-            this.lblMeanPTValue.Location = new System.Drawing.Point(849, 245);
+            this.lblMeanPTValue.Location = new System.Drawing.Point(849, 278);
             this.lblMeanPTValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMeanPTValue.Name = "lblMeanPTValue";
             this.lblMeanPTValue.Size = new System.Drawing.Size(37, 20);
@@ -517,7 +518,7 @@
             this.lblSDPTValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSDPTValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDPTValue.ForeColor = System.Drawing.Color.White;
-            this.lblSDPTValue.Location = new System.Drawing.Point(980, 245);
+            this.lblSDPTValue.Location = new System.Drawing.Point(980, 278);
             this.lblSDPTValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSDPTValue.Name = "lblSDPTValue";
             this.lblSDPTValue.Size = new System.Drawing.Size(37, 20);
@@ -530,7 +531,7 @@
             this.lblTP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblTP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTP1.ForeColor = System.Drawing.Color.White;
-            this.lblTP1.Location = new System.Drawing.Point(843, 292);
+            this.lblTP1.Location = new System.Drawing.Point(843, 325);
             this.lblTP1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTP1.Name = "lblTP1";
             this.lblTP1.Size = new System.Drawing.Size(42, 20);
@@ -543,7 +544,7 @@
             this.lblTP1Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblTP1Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTP1Value.ForeColor = System.Drawing.Color.White;
-            this.lblTP1Value.Location = new System.Drawing.Point(849, 319);
+            this.lblTP1Value.Location = new System.Drawing.Point(849, 352);
             this.lblTP1Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTP1Value.Name = "lblTP1Value";
             this.lblTP1Value.Size = new System.Drawing.Size(37, 20);
@@ -556,7 +557,7 @@
             this.lblTP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblTP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTP2.ForeColor = System.Drawing.Color.White;
-            this.lblTP2.Location = new System.Drawing.Point(971, 292);
+            this.lblTP2.Location = new System.Drawing.Point(971, 325);
             this.lblTP2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTP2.Name = "lblTP2";
             this.lblTP2.Size = new System.Drawing.Size(42, 20);
@@ -569,7 +570,7 @@
             this.lblTP3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblTP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTP3.ForeColor = System.Drawing.Color.White;
-            this.lblTP3.Location = new System.Drawing.Point(1089, 292);
+            this.lblTP3.Location = new System.Drawing.Point(1089, 325);
             this.lblTP3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTP3.Name = "lblTP3";
             this.lblTP3.Size = new System.Drawing.Size(42, 20);
@@ -582,7 +583,7 @@
             this.lblTP2Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblTP2Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTP2Value.ForeColor = System.Drawing.Color.White;
-            this.lblTP2Value.Location = new System.Drawing.Point(980, 319);
+            this.lblTP2Value.Location = new System.Drawing.Point(980, 352);
             this.lblTP2Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTP2Value.Name = "lblTP2Value";
             this.lblTP2Value.Size = new System.Drawing.Size(37, 20);
@@ -595,7 +596,7 @@
             this.lblTP3Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblTP3Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTP3Value.ForeColor = System.Drawing.Color.White;
-            this.lblTP3Value.Location = new System.Drawing.Point(1108, 319);
+            this.lblTP3Value.Location = new System.Drawing.Point(1108, 352);
             this.lblTP3Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTP3Value.Name = "lblTP3Value";
             this.lblTP3Value.Size = new System.Drawing.Size(37, 20);
@@ -608,7 +609,7 @@
             this.lblCurrrentPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblCurrrentPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrrentPrice.ForeColor = System.Drawing.Color.White;
-            this.lblCurrrentPrice.Location = new System.Drawing.Point(1089, 213);
+            this.lblCurrrentPrice.Location = new System.Drawing.Point(1089, 246);
             this.lblCurrrentPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCurrrentPrice.Name = "lblCurrrentPrice";
             this.lblCurrrentPrice.Size = new System.Drawing.Size(122, 20);
@@ -621,7 +622,7 @@
             this.lblCurrentPriceValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblCurrentPriceValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentPriceValue.ForeColor = System.Drawing.Color.White;
-            this.lblCurrentPriceValue.Location = new System.Drawing.Point(1108, 245);
+            this.lblCurrentPriceValue.Location = new System.Drawing.Point(1108, 278);
             this.lblCurrentPriceValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCurrentPriceValue.Name = "lblCurrentPriceValue";
             this.lblCurrentPriceValue.Size = new System.Drawing.Size(37, 20);
@@ -671,7 +672,7 @@
             this.lblSL1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSL1.ForeColor = System.Drawing.Color.White;
-            this.lblSL1.Location = new System.Drawing.Point(843, 378);
+            this.lblSL1.Location = new System.Drawing.Point(843, 411);
             this.lblSL1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSL1.Name = "lblSL1";
             this.lblSL1.Size = new System.Drawing.Size(42, 20);
@@ -684,7 +685,7 @@
             this.lblSL2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSL2.ForeColor = System.Drawing.Color.White;
-            this.lblSL2.Location = new System.Drawing.Point(971, 378);
+            this.lblSL2.Location = new System.Drawing.Point(971, 411);
             this.lblSL2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSL2.Name = "lblSL2";
             this.lblSL2.Size = new System.Drawing.Size(42, 20);
@@ -697,7 +698,7 @@
             this.lblSL3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSL3.ForeColor = System.Drawing.Color.White;
-            this.lblSL3.Location = new System.Drawing.Point(1089, 378);
+            this.lblSL3.Location = new System.Drawing.Point(1089, 411);
             this.lblSL3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSL3.Name = "lblSL3";
             this.lblSL3.Size = new System.Drawing.Size(42, 20);
@@ -710,7 +711,7 @@
             this.lblSL1Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSL1Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSL1Value.ForeColor = System.Drawing.Color.White;
-            this.lblSL1Value.Location = new System.Drawing.Point(849, 405);
+            this.lblSL1Value.Location = new System.Drawing.Point(849, 438);
             this.lblSL1Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSL1Value.Name = "lblSL1Value";
             this.lblSL1Value.Size = new System.Drawing.Size(37, 20);
@@ -723,7 +724,7 @@
             this.lblSL2Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSL2Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSL2Value.ForeColor = System.Drawing.Color.White;
-            this.lblSL2Value.Location = new System.Drawing.Point(980, 405);
+            this.lblSL2Value.Location = new System.Drawing.Point(980, 438);
             this.lblSL2Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSL2Value.Name = "lblSL2Value";
             this.lblSL2Value.Size = new System.Drawing.Size(37, 20);
@@ -736,7 +737,7 @@
             this.lblSL3Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSL3Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSL3Value.ForeColor = System.Drawing.Color.White;
-            this.lblSL3Value.Location = new System.Drawing.Point(1108, 405);
+            this.lblSL3Value.Location = new System.Drawing.Point(1108, 438);
             this.lblSL3Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSL3Value.Name = "lblSL3Value";
             this.lblSL3Value.Size = new System.Drawing.Size(37, 20);
@@ -749,7 +750,7 @@
             this.lblLossRisk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblLossRisk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLossRisk.ForeColor = System.Drawing.Color.White;
-            this.lblLossRisk.Location = new System.Drawing.Point(843, 445);
+            this.lblLossRisk.Location = new System.Drawing.Point(843, 478);
             this.lblLossRisk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLossRisk.Name = "lblLossRisk";
             this.lblLossRisk.Size = new System.Drawing.Size(93, 20);
@@ -762,7 +763,7 @@
             this.lblWinReward.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblWinReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWinReward.ForeColor = System.Drawing.Color.White;
-            this.lblWinReward.Location = new System.Drawing.Point(971, 445);
+            this.lblWinReward.Location = new System.Drawing.Point(971, 478);
             this.lblWinReward.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWinReward.Name = "lblWinReward";
             this.lblWinReward.Size = new System.Drawing.Size(110, 20);
@@ -775,7 +776,7 @@
             this.lblLossRiskValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblLossRiskValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLossRiskValue.ForeColor = System.Drawing.Color.White;
-            this.lblLossRiskValue.Location = new System.Drawing.Point(849, 473);
+            this.lblLossRiskValue.Location = new System.Drawing.Point(849, 506);
             this.lblLossRiskValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLossRiskValue.Name = "lblLossRiskValue";
             this.lblLossRiskValue.Size = new System.Drawing.Size(37, 20);
@@ -788,7 +789,7 @@
             this.lblWinRewardValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblWinRewardValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWinRewardValue.ForeColor = System.Drawing.Color.White;
-            this.lblWinRewardValue.Location = new System.Drawing.Point(980, 473);
+            this.lblWinRewardValue.Location = new System.Drawing.Point(980, 506);
             this.lblWinRewardValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWinRewardValue.Name = "lblWinRewardValue";
             this.lblWinRewardValue.Size = new System.Drawing.Size(37, 20);
@@ -806,7 +807,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(971, 542);
+            this.label3.Location = new System.Drawing.Point(971, 575);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 20);
@@ -817,7 +818,7 @@
             // 
             this.tbVolume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.tbVolume.ForeColor = System.Drawing.Color.White;
-            this.tbVolume.Location = new System.Drawing.Point(975, 567);
+            this.tbVolume.Location = new System.Drawing.Point(975, 600);
             this.tbVolume.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbVolume.Name = "tbVolume";
             this.tbVolume.Size = new System.Drawing.Size(91, 26);
@@ -830,7 +831,7 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(984, 795);
+            this.label6.Location = new System.Drawing.Point(984, 828);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 20);
@@ -845,7 +846,7 @@
             this.btReleaseGraph.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btReleaseGraph.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btReleaseGraph.ForeColor = System.Drawing.Color.White;
-            this.btReleaseGraph.Location = new System.Drawing.Point(1122, 795);
+            this.btReleaseGraph.Location = new System.Drawing.Point(1122, 828);
             this.btReleaseGraph.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btReleaseGraph.Name = "btReleaseGraph";
             this.btReleaseGraph.Size = new System.Drawing.Size(134, 20);
@@ -914,7 +915,7 @@
             this.tbSymbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.tbSymbol.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbSymbol.ForeColor = System.Drawing.Color.White;
-            this.tbSymbol.Location = new System.Drawing.Point(847, 567);
+            this.tbSymbol.Location = new System.Drawing.Point(847, 600);
             this.tbSymbol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSymbol.Name = "tbSymbol";
             this.tbSymbol.Size = new System.Drawing.Size(95, 26);
@@ -927,7 +928,7 @@
             this.lblSymbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lblSymbol.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSymbol.ForeColor = System.Drawing.Color.White;
-            this.lblSymbol.Location = new System.Drawing.Point(843, 542);
+            this.lblSymbol.Location = new System.Drawing.Point(843, 575);
             this.lblSymbol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSymbol.Name = "lblSymbol";
             this.lblSymbol.Size = new System.Drawing.Size(70, 20);
@@ -983,7 +984,7 @@
             this.lblTimeZoneValue.BackColor = System.Drawing.Color.DodgerBlue;
             this.lblTimeZoneValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeZoneValue.ForeColor = System.Drawing.Color.White;
-            this.lblTimeZoneValue.Location = new System.Drawing.Point(933, 866);
+            this.lblTimeZoneValue.Location = new System.Drawing.Point(931, 868);
             this.lblTimeZoneValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTimeZoneValue.Name = "lblTimeZoneValue";
             this.lblTimeZoneValue.Padding = new System.Windows.Forms.Padding(10);
@@ -1062,22 +1063,36 @@
             // pbBodyBG
             // 
             this.pbBodyBG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.pbBodyBG.Location = new System.Drawing.Point(0, 97);
+            this.pbBodyBG.Location = new System.Drawing.Point(0, 89);
             this.pbBodyBG.Name = "pbBodyBG";
-            this.pbBodyBG.Size = new System.Drawing.Size(1277, 755);
+            this.pbBodyBG.Size = new System.Drawing.Size(1277, 802);
             this.pbBodyBG.TabIndex = 19;
             this.pbBodyBG.TabStop = false;
             // 
             // btStartButton
             // 
             this.btStartButton.Image = ((System.Drawing.Image)(resources.GetObject("btStartButton.Image")));
-            this.btStartButton.Location = new System.Drawing.Point(841, 709);
+            this.btStartButton.Location = new System.Drawing.Point(841, 742);
             this.btStartButton.Name = "btStartButton";
             this.btStartButton.Size = new System.Drawing.Size(25, 25);
             this.btStartButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btStartButton.TabIndex = 20;
             this.btStartButton.TabStop = false;
             this.btStartButton.Click += new System.EventHandler(this.lblSimulate_Click);
+            // 
+            // lbMaximize
+            // 
+            this.lbMaximize.AutoSize = true;
+            this.lbMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lbMaximize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbMaximize.ForeColor = System.Drawing.Color.White;
+            this.lbMaximize.Location = new System.Drawing.Point(1187, 12);
+            this.lbMaximize.Name = "lbMaximize";
+            this.lbMaximize.Size = new System.Drawing.Size(33, 29);
+            this.lbMaximize.TabIndex = 13;
+            this.lbMaximize.Text = "m";
+            this.lbMaximize.Visible = false;
+            this.lbMaximize.Click += new System.EventHandler(this.lbMaximize_Click);
             // 
             // Main
             // 
@@ -1088,6 +1103,7 @@
             this.ClientSize = new System.Drawing.Size(1277, 895);
             this.Controls.Add(this.btStartButton);
             this.Controls.Add(this.pbLogo);
+            this.Controls.Add(this.lbMaximize);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.lblSymbolTitle);
             this.Controls.Add(this.tbSymbol);
@@ -1261,6 +1277,7 @@
         private System.Windows.Forms.PictureBox pbCalculationField;
         private System.Windows.Forms.PictureBox pbBodyBG;
         private System.Windows.Forms.PictureBox btStartButton;
+        private System.Windows.Forms.Label lbMaximize;
     }
 }
 

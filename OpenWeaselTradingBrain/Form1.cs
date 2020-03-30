@@ -19,6 +19,8 @@ using System.Threading;
 using System.IO;
 using RDotNet;
 using LiveCharts;
+using LiveCharts.Defaults;
+//using System.Windows.Media;
 
 
 namespace OpenWeaselTradingBrain
@@ -40,6 +42,7 @@ namespace OpenWeaselTradingBrain
 
 
             InitializeComponent();
+
 
 
 
@@ -733,6 +736,11 @@ namespace OpenWeaselTradingBrain
                 }
                 SendKeys.Send("{TAB}");
             }
+        }
+
+        private void lbMaximize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
         }
     }
  
